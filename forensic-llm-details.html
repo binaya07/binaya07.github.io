@@ -97,7 +97,7 @@
               <ul>
                 <li><strong>Category</strong>: Research Paper</li>
                 <li><strong>Affiliation</strong>: Louisiana State University (LSU)</li>
-                <li><strong>Date</strong>: 2024</li>
+                <li><strong>Status</strong>: Submitted to DFRWS EU 2025</li>
                 <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
               </ul>
             </div>
@@ -106,37 +106,20 @@
               <h4>Abstract</h4>
 
               <p>
-                Large Language Models (LLMs) excel in diverse natural language tasks but often lack the specialization required for fields such as
-                digital forensics. Moreover, their reliance on cloud-based APIs or
-                high-performance computers restricts use in resource-limited environments,
-                and response hallucinations could compromise their
-                applicability in forensic contexts where adherence to legal standards
-                for evidence admissibility is crucial. To overcome these limitations,
-                we introduce ForensicLLM, a primary effort utilizing a 4-bit
-                quantized LLaMA-3-8B model. ForensicLLM was fine-tuned using
-                Retrieval Augmented Fine-tuning (RAFT) on 6739 Q&A samples
-                extracted with GPT-4 Turbo from a corpus of 1082 digital forensic
-                research articles and meticulously curated digital forensic artifacts.
-                RAFT enables the model to more reliably and accurately leverage
-                trusted digital forensics sources to answer relevant questions for
-                assisting in digital investigations and cite the source of that information.
-                In inference, ForensicLLM uses Retrieval Augmented
-                Generation (RAG) to access its knowledge base, which can easily
-                be updated without re-training. A comprehensive evaluation was
-                performed on 2246 Q&A samples using three performance metrics
-                that measure the similarity, coherence, consistency, fluency, and
-                relevance of the model’s responses against the expected responses,
-                along with its reliability at accurately citing sources.We report that
-                ForensicLLM outperformed the base LLaMA-3-8B model by 6.9% on
-                BERTScore F1, 3.2% on BGE-M3 cosine similarity, and 11.3% on GEval.
-                It also achieved improvements of 4.3% on BERTScore F1, 3.1%
-                on BGE-M3 cosine similarity, and 5.7% on G-Eval over base LLaMA-
-                3-8B+RAG. Additionally, ForensicLLM accurately attributes the
-                sources of its information 84.6% of the time, with 59.0% of these
-                including both the authors and the title. These advancements mark
-                ForensicLLM as a transformative tool in digital forensics, substantially
-                elevating model performance and source attribution in critical
-                investigative contexts.
+                Large Language Models (LLMs) excel in diverse natural language tasks but often lack specialization for fields like
+digital forensics. Their reliance on cloud-based APIs or high-performance computers restricts use in resource-limited
+environments, and response hallucinations could compromise their applicability in forensic contexts. We introduce
+ForensicLLM, a 4-bit quantized LLaMA-3.1-8B model fine-tuned using Retrieval Augmented Fine-tuning (RAFT) on
+6739 Q&A samples extracted from 1082 digital forensic research articles and curated digital artifacts. Evaluation on
+2244 Q&A samples showed ForensicLLM outperformed the base LLaMA-3.1-8B model by 4.06%, 5.43%, and 15.79%
+on BERTScore F1, BGE-M3 cosine similarity, and G-Eval, respectively. Compared to LLaMA-3.1-8B + Retrieval Augmented
+Generation (RAG), it achieved improvements of 3.46%, 3.25%, and 4.61% on the same metrics. ForensicLLM
+accurately attributes sources 86.6% of the time, with 81.2% of the responses including both authors and title. Additionally,
+a user survey conducted with digital forensics professionals confirmed significant improvements of ForensicLLM and
+RAG model over the base model across multiple evaluation metrics. ForensicLLM showed strength in “correctness” and
+“relevance” metrics, while the RAG model was appreciated for providing more detailed responses. These advancements
+mark ForensicLLM as a transformative tool in digital forensics, elevating model performance and source attribution in
+critical investigative contexts.
               </p>
             </div>
           </div>
