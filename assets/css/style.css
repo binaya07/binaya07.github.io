@@ -1105,3 +1105,33 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.skill-box {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+}
+
+.skill-box h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.skill-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-tags li {
+  display: inline-block;
+  background: #f0f4ff;
+  color: #4154f1;
+  padding: 6px 12px;
+  margin: 5px 6px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
